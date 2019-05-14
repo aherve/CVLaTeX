@@ -2,6 +2,7 @@
 \moderncvstyle{casual} 
 \moderncvcolor{blue}
 \setlength{\hintscolumnwidth}{2cm} 
+\usepackage{fontawesome}
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.8]{geometry}
 \usepackage{helvet}
@@ -20,22 +21,70 @@
 \begin{document}
 \makecvtitle{}
 \section{Experience}
-\cventry{2015--now}{CTO}{Hunteed}{Paris}{}{blabla}
-\cventry{2014--2015}{CTO- cofounder}{Shapter}{Paris}{}{blabla blabala}
-\cventry{2012--2014}{Head of R\&D}{adomik}{Paris}{}{blabla blabala}
+\cventry{2015--now}{CTO}{\httplink[Hunteed]{hunteed.com}}{Paris}{}{%
+  Hunteed is a digital recruitement marketplace. I Designed \& implemented the whole solution from scratch:
+  \begin{itemize}
+    \item data-modeling
+    \item infrastructure \& devOps with AWS, Docker, CodeShip, heroku\ldots
+    \item 4 angular webapps
+    \item 1 node-express api (written in typescript)
+    \item Design \& implementation of Hunteed's recommendation engine
+    \item Design \& implementation of Hunteed's CRM engine
+    \item advanced data analytics
+  \end{itemize}
+}
+\cventry{2014--2015}{CTO, cofounder}{Shapter}{Paris}{}{%
+  Shapter used to help students to choose their studies thanks to alumni feedbacks and an innovative recommendation engine \newline
+  I rewrote from stratch the backend and devOps:
+  \begin{itemize}
+    \item design \& implementation of a Ruby-on-Rails api from scratch
+    \item data-modeling
+    \item design \& implementation of a real-time recommendation engine
+    \item devOps
+  \end{itemize}
+}
+\cventry{2012--2014}{Head of R\&D}{\httplink[adomik]{adomik.com}}{Paris}{}{%
+  I bootstraped the very first algorithms and big data infrastructure of adomik
+  \begin{itemize}
+    \item Hadoop-stream (using ruby-written algorithms)
+    \item Data visualization with Ruby on Rails
+    \item Big data infrastructure design and creation (using AWS hadoop, dynamodb, redshift, ec2\ldots etc)
+  \end{itemize}
+}
 \section{Formation}
 \cventry{2012}{PhD in fundamental fluid mechanics}{Ecole Polytechnique / ONERA}{Paris}{}{}
 \cventry{2009}{Master of engineering}{ISAE ENSMA}{Poitiers}{}{}
 \cventry{2009}{Master of research in fluid dynamics}{Université de Poitiers}{Poitiers}{}{}
-\cventry{2006}{Baccalauréat Série S}{Lycée Charlemagne}{Paris}{}{}
-\section{Languages}
-\cvitemwithcomment{French}{native}{}
-\cvitemwithcomment{English}{fluent}{}
-\section{Compétences informatiques}
-\cvdoubleitem{Java}{blabla, blabla}{C++}{blabla, blabla}
-\cvdoubleitem{Php}{blabla, blabla}{Pascal}{blabla, blabla}
-\cvdoubleitem{\LaTeX}{blabla, blabla}{Python}{blabla, blabla}
-\section{Centres d'intérêts}
-\cvitem{hobby 1}{Description}
-\cvitem{hobby 2}{Description}
+\cventry{2004--2006}{Classe préparatoires MP}{Lycée Charlemagne}{Paris}{}{}
+\cventry{2004}{Baccalauréat Série S}{Lycée Charlemagne}{Paris}{}{}
+\section{Publication \& open-source projects of interest}
+\cventry{research}{PhD Thesis}{\httplink[Contrôle optimal en boucle fermée d’instabilités hydrodynamiques par identification de modèles réduits \faExternalLink]{github.com/aherve/publications/tree/master/2012/PhD}}{}{}{}
+\cventry{}{JFM Publication}{\httplink[A physics-based approach to flow control using system identification \faExternalLink]{www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/physicsbased-approach-to-flow-control-using-system-identification/57A1807AF0B15006898FD5FF20CEDC57}}{}{}{}
+
+\cventry{blog}{hackernoon publications}{}{}{}{\begin{itemize}
+    \item \httplink[Having Fun With Functional Programming \faExternalLink]{medium.com/@aherve/having-fun-with-functional-programming-b7957be14543}
+    \item \httplink[Basic javascript algorithms toolbox: starter kit \faExternalLink]{hackernoon.com/basic-javascript-algorithms-toolbox-starter-kit-dc2af3ceebad}
+    \item \httplink[How we happily dockerized our development environment \faExternalLink]{hackernoon.com/how-we-happily-dockerized-our-development-environment-part-1-2-b05fd6927a53}
+    \item \httplink[Bro, do you even map? — MapReduce demystified \faExternalLink]{hackernoon.com/bro-do-you-even-map-mapreduce-demystified-ea7f11b0e238}
+    \item \httplink[Installing git hooks in a dockerized environment \faExternalLink]{hackernoon.com/using-git-hooks-in-a-dockerized-environment-55372c40815f}
+\end{itemize}}
+
+\cventry{github}{open source projects}{}{}{}{%
+  \begin{itemize}
+    \item \httplink[docker-nodemon: a light dockerized dev environment to work with docker \& typescript \faExternalLink]{github.com/aherve/docker-nodemon}
+    \item \httplink[typescript-express-docker: boostrap your node-express-typescript api \faExternalLink]{github.com/aherve/typescript-express-docker}
+    \item \httplink[ngx-compact-number: angular lib to display numbers in a compact way \faExternalLink]{github.com/aherve/ngx-compact-number}
+  \end{itemize}
+}
+
+\section{Skills}
+\cvitem{languages}{Typescript, javascript, ruby, fortran}
+\cvitem{web}{node, express, angular, ruby-on-rails}
+\cvitem{big-data}{Hadoop, map/reduce design, data-modeling}
+\cvitem{infra/DevOps}{Docker, AWS, mongodb}
+\section{Spoken Languages}
+\cvitemwithcomment{}{French}{native}
+\cvitemwithcomment{}{English}{fluent}
+\section{Hobbies}
+\cvitem{}{Music, chess, windsurf\ldots}
 \end{document}
