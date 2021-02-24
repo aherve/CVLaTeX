@@ -8,8 +8,8 @@
 \usepackage{helvet}
 \usepackage[english]{babel}
 \name{Aurélien}{Hervé}
-\title{PhD, expert CTO, fullstack dev \& architect} 
-\address{33 rue des Prairies}{75020 Paris}{France}
+\title{PhD, expert cloud engineer \& distributed systems architect} 
+\address{1 rue de la grande sente}{27950 Saint-Pierre d'Autils}{France}
 \phone[mobile]{06~63~77~42~56}
 \email{mail@aurelien-herve.com}
 \homepage{aurelien-herve.com}
@@ -21,11 +21,19 @@
 \begin{document}
 \makecvtitle{}
 \section{Experience}
-\cventry{2015--today}{CTO}{\httplink[Hunteed]{hunteed.com}}{Paris}{}{%
+\cventry{2019--today}{Staff Engineer}{\httplink[Aircall]{aircall.io}}{Paris}{}{%
+  The phone system for modern business
+  \begin{itemize}
+    \item Architecture \& implementation of a real-time, distributed data-platform with AWS, terraform, lambda, kinesis, dynamoDB, golang \ldots
+    \item Design \& implementation of distributed algorithms to scale existing features
+    \item Setting up a data governance to empower all teams (data security, robustness, availability, documentation\ldots)
+  \end{itemize}
+}
+\cventry{2015--2019}{CTO}{\httplink[Hunteed]{hunteed.com}}{Paris}{}{%
   Hunteed is a digital recruitement marketplace. I Designed \& implemented the whole solution from scratch:
   \begin{itemize}
     \item Data-modeling
-    \item Infrastructure \& devOps with AWS, Docker, CodeShip, heroku\ldots
+    \item Real-time Infrastructure \& devOps with AWS, Docker, CodeShip \ldots
     \item 4 angular webapps
     \item 1 node-express api (written in typescript)
     \item Design \& implementation of Hunteed's recommendation engine
@@ -51,18 +59,19 @@
     \item Big data infrastructure design and creation (using AWS hadoop, dynamodb, redshift, ec2\ldots etc)
   \end{itemize}
 }
+\clearpage
 \section{Formation}
 \cventry{2012}{PhD in fundamental fluid mechanics}{Ecole Polytechnique / ONERA}{Paris}{}{}
 \cventry{2009}{Master of engineering}{ISAE ENSMA}{Poitiers}{}{}
 \cventry{2009}{Master of research in fluid dynamics}{Université de Poitiers}{Poitiers}{}{}
 \cventry{2004--2006}{Classe préparatoires MP}{Lycée Charlemagne}{Paris}{}{}
 \cventry{2004}{Baccalauréat Série S}{Lycée Charlemagne}{Paris}{}{}
-\clearpage
 \section{Skills}
-\cvitem{languages}{\textbf{Typescript}, \textbf{go}, \textbf{ruby}, javascript, fortran}
+\cvitem{languages}{\textbf{go}, \textbf{terraform}, Typescript, ruby, javascript, fortran}
+\cvitem{[big]data}{\textbf{real-time distributed systems}, \textbf{map/reduce algorithm design}, Hadoop, data-modeling, spectral clustering}
+\cvitem{infra/DevOps}{\textbf{AWS, Docker, terraform}}
+\cvitem{dataStores}{\textbf{DynamoDB}, mongoDB, redis}
 \cvitem{web}{node, express, angular, ruby-on-rails}
-\cvitem{[big]data}{Hadoop, map/reduce design, data-modeling, algorithm design, spectral clustering}
-\cvitem{infra/DevOps}{Docker, AWS, mongodb, redis}
 \section{Publication \& open-source projects of interest}
 \cventry{research}{PhD Thesis}{\httplink[Contrôle optimal en boucle fermée d’instabilités hydrodynamiques par identification de modèles réduits \faExternalLink]{github.com/aherve/publications/tree/master/2012/PhD}}{}{}{}
 \cventry{}{JFM Publication}{\httplink[A physics-based approach to flow control using system identification \faExternalLink]{www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/physicsbased-approach-to-flow-control-using-system-identification/57A1807AF0B15006898FD5FF20CEDC57}}{}{}{}
@@ -84,7 +93,7 @@
   \end{itemize}
 }
 
-\section{Spoken Languages}
+\section{Languages}
 \cvitemwithcomment{}{French}{native}
 \cvitemwithcomment{}{English}{fluent}
 \section{Hobbies}
