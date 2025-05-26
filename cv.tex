@@ -2,7 +2,7 @@
 \moderncvstyle{casual} 
 \moderncvcolor{blue}
 \setlength{\hintscolumnwidth}{2cm} 
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.8]{geometry}
 \usepackage{helvet}
@@ -10,10 +10,9 @@
 \name{Aurélien}{Hervé}
 \title{PhD, expert cloud engineer \& distributed systems architect} 
 \address{1 rue de la grande sente}{27950 Saint-Pierre d'Autils}{France}
-\phone[mobile]{06~63~77~42~56}
+\phone[mobile]{+33663774256}
 \email{mail@aurelien-herve.com}
 \homepage{aurelien-herve.com}
-\social[twitter]{aurel\_herve}
 \social[github]{aherve}
 %\extrainfo{informations complémentaires.}
 \photo[70pt][0.4pt]{aurelien}
@@ -21,7 +20,23 @@
 \begin{document}
 \makecvtitle{}
 \section{Experience}
-\cventry{2019--today}{Staff Engineer}{\httplink[Aircall]{aircall.io}}{Paris}{}{%
+
+\cventry{2022--Present}{Principal Engineer}{\httplink[Bobsled]{bobsled.co}}{Remote}{}{%
+  Cross cloud Data sharing platform
+  \begin{itemize}
+    \item Working with all major cloud/data providers (AWS, GCP, Snowflake, Cloudflare, Oracle\ldots)
+    \item Focus on infrastructure, security, and distributed systems governance for a cross-cloud, serverless architecture
+    \item typescript, terraform\ldots
+  \end{itemize}
+}
+\cventry{2021-2022}{CTO, cofounder}{Exomodule}{Remote}{}{%
+  Biotech computation platform that allowed scientists to run DNA analysis software in the cloud.
+  \begin{itemize}
+    \item AWS native architecture design \& implementation
+    \item Serverless architecture to orchestrate and run DAGs of biotech software. appsync, graphQL, lambda, dynamoDB, terraform, docker, golang, ECS...
+  \end{itemize}
+}
+\cventry{2019--2021}{Head of data platform}{\httplink[Aircall]{aircall.io}}{Paris}{}{%
   The phone system for modern business
   \begin{itemize}
     \item Architecture \& implementation of a real-time, distributed data-platform with AWS, terraform, lambda, kinesis, dynamoDB, golang \ldots
@@ -35,19 +50,17 @@
     \item Data-modeling
     \item Real-time Infrastructure \& devOps with AWS, Docker, CodeShip \ldots
     \item 4 angular webapps
-    \item 1 node-express api (written in typescript)
+    \item 1 node-express api (typescript)
     \item Design \& implementation of Hunteed's recommendation engine
     \item Design \& implementation of Hunteed's CRM engine
     \item Advanced data analytics
   \end{itemize}
 }
 \cventry{2014--2015}{CTO, cofounder}{Shapter}{Paris}{}{%
-  Shapter used to help students to choose their studies thanks to alumni feedbacks and an innovative recommendation engine \newline
-  I rewrote from scratch the backend and devOps:
+  Shapter used to help students to choose their studies thanks to alumni feedbacks and an innovative recommendation engine
   \begin{itemize}
-    \item Design \& implementation of a Ruby-on-Rails api from scratch
-    \item Data-modeling
-    \item Design \& implementation of a real-time recommendation engine
+    \item Ruby-on-Rails api
+    \item Real-time recommendation engine
     \item DevOps
   \end{itemize}
 }
@@ -55,43 +68,21 @@
   I bootstraped the very first algorithms and big data infrastructure of adomik
   \begin{itemize}
     \item Hadoop-stream (using ruby-written algorithms)
-    \item Data visualization with Ruby on Rails
-    \item Big data infrastructure design and creation (using AWS hadoop, dynamodb, redshift, ec2\ldots etc)
+    \item Big data infrastructure design and creation (AWS hadoop, dynamodb, redshift, ec2\ldots etc)
   \end{itemize}
 }
-\clearpage
+\section{Skills}
+\cvitem{cloud}{\textbf{AWS}, \textbf{GCP}, Serverless, distributed systems, Snowflake, OracleCloud}
+\cvitem{languages}{\textbf{go}, \textbf{Typescript}, ruby, javascript, fortran}
+\cvitem{infra/DevOps}{\textbf{terraform}, Docker}
+\cvitem{dataStores}{\textbf{DynamoDB, firebase}, mongoDB, redis, SQL}
 \section{Formation}
 \cventry{2012}{PhD in fundamental fluid mechanics}{Ecole Polytechnique / ONERA}{Paris}{}{}
 \cventry{2009}{Master of engineering}{ISAE ENSMA}{Poitiers}{}{}
 \cventry{2009}{Master of research in fluid dynamics}{Université de Poitiers}{Poitiers}{}{}
-\cventry{2004--2006}{Classe préparatoires MP}{Lycée Charlemagne}{Paris}{}{}
-\cventry{2004}{Baccalauréat Série S}{Lycée Charlemagne}{Paris}{}{}
-\section{Skills}
-\cvitem{languages}{\textbf{go}, \textbf{terraform}, Typescript, ruby, javascript, fortran}
-\cvitem{[big]data}{\textbf{real-time distributed systems}, \textbf{map/reduce algorithm design}, Hadoop, data-modeling, spectral clustering}
-\cvitem{infra/DevOps}{\textbf{AWS, Docker, terraform}}
-\cvitem{dataStores}{\textbf{DynamoDB}, mongoDB, redis}
-\cvitem{web}{node, express, angular, ruby-on-rails}
-\section{Publication \& open-source projects of interest}
-\cventry{research}{PhD Thesis}{\httplink[Contrôle optimal en boucle fermée d’instabilités hydrodynamiques par identification de modèles réduits \faExternalLink]{github.com/aherve/publications/tree/master/2012/PhD}}{}{}{}
-\cventry{}{JFM Publication}{\httplink[A physics-based approach to flow control using system identification \faExternalLink]{www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/physicsbased-approach-to-flow-control-using-system-identification/57A1807AF0B15006898FD5FF20CEDC57}}{}{}{}
-
-\cventry{blog}{hackernoon publications}{}{}{medium.com/@aherve}{\begin{itemize}
-    \item \httplink[Having Fun With Functional Programming \faExternalLink]{medium.com/@aherve/having-fun-with-functional-programming-b7957be14543}
-    \item \httplink[Basic javascript algorithms toolbox: starter kit \faExternalLink]{hackernoon.com/basic-javascript-algorithms-toolbox-starter-kit-dc2af3ceebad}
-    \item \httplink[How we happily dockerized our development environment \faExternalLink]{hackernoon.com/how-we-happily-dockerized-our-development-environment-part-1-2-b05fd6927a53}
-    \item \httplink[Bro, do you even map? — MapReduce demystified \faExternalLink]{hackernoon.com/bro-do-you-even-map-mapreduce-demystified-ea7f11b0e238}
-    \item \httplink[Installing git hooks in a dockerized environment \faExternalLink]{hackernoon.com/using-git-hooks-in-a-dockerized-environment-55372c40815f}
-\end{itemize}}
-
-\cventry{github}{open source projects}{}{}{github.com/aherve}{%
-  \begin{itemize}
-    \item \httplink[giflichess: turn your chess game into an animated gif \faExternalLink]{github.com/aherve/giflichess}
-    \item \httplink[docker-nodemon: a light dockerized dev environment to work with docker \& typescript \faExternalLink]{github.com/aherve/docker-nodemon}
-    \item \httplink[typescript-express-docker: boostrap your node-express-typescript api \faExternalLink]{github.com/aherve/typescript-express-docker}
-    \item \httplink[ngx-compact-number: angular lib to display numbers in a compact way \faExternalLink]{github.com/aherve/ngx-compact-number}
-  \end{itemize}
-}
+\section{Publications}
+\cventry{research}{PhD Thesis}{\httplink[Controle optimal en boucle fermee d’instabilites hydrodynamiques par identification de modeles reduits]{github.com/aherve/publications/tree/master/2012/PhD}}{}{}{}
+\cventry{}{JFM Publication}{\httplink[A physics-based approach to flow control using system identification]{www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/physicsbased-approach-to-flow-control-using-system-identification/57A1807AF0B15006898FD5FF20CEDC57}}{}{}{}
 
 \section{Languages}
 \cvitemwithcomment{}{French}{native}

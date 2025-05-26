@@ -1,3 +1,6 @@
 *.aux
 *.log
 *.out
+*_latexmk
+*.fls
+*cv.synctex.gz
